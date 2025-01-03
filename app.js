@@ -496,13 +496,13 @@ let vidmudLans = lans1.map((item) => {
 });
 
 const urls = [
-  // ...vidquLans,
-  // ...mioLans,
+  ...vidquLans,
+  ...mioLans,
   ...vidwudLans,
-  // ...ismarttaLans,
-  // ...vidmudLans,
-  // "https://www.vidwuz.com/",
-  // "https://www.easehow.com/",
+  ...ismarttaLans,
+  ...vidmudLans,
+  "https://www.vidwuz.com/",
+  "https://www.easehow.com/",
 ];
 
 const folderPath = "downloads";
