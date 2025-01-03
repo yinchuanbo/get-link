@@ -261,7 +261,9 @@ const crawlGet = async ({ url = "" }) => {
         return;
       }
 
-      // 规范化URL
+      // 规范化URL，移除查询参数
+      const urlObj = new URL(pageUrl);
+      pageUrl = `${urlObj.protocol}//${urlObj.host}${urlObj.pathname}`;
       const normalizedUrl = normalizeUrl(pageUrl);
 
       // Skip URLs containing 'blog'
