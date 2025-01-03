@@ -273,9 +273,9 @@ const crawlGet = async ({ url = "" }) => {
 
       // 检查规范化后的URL是否已访问
       if (visitedUrls.has(normalizedUrl)) {
-        console.log(
-          `Skipping duplicate page: ${pageUrl} (normalized: ${normalizedUrl})`
-        );
+        // console.log(
+        //   `Skipping duplicate page: ${pageUrl} (normalized: ${normalizedUrl})`
+        // );
         return;
       }
 
@@ -496,13 +496,13 @@ let vidmudLans = lans1.map((item) => {
 });
 
 const urls = [
-  ...vidquLans,
-  ...mioLans,
+  // ...vidquLans,
+  // ...mioLans,
   ...vidwudLans,
-  ...ismarttaLans,
-  ...vidmudLans,
-  "https://www.vidwuz.com/",
-  "https://www.easehow.com/",
+  // ...ismarttaLans,
+  // ...vidmudLans,
+  // "https://www.vidwuz.com/",
+  // "https://www.easehow.com/",
 ];
 
 const folderPath = "downloads";
