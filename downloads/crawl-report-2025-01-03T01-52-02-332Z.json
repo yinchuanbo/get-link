@@ -1,0 +1,306 @@
+{
+  "timestamp": "2025-01-03T01:38:32.434Z",
+  "sites": {
+    "https://ko.vidqu.ai/": {
+      "totalPages": 11,
+      "errors": {
+        "crawlErrors": [],
+        "resourceErrors": [],
+        "seoErrors": [
+          {
+            "url": "https://ko.vidqu.ai/multiple-face-swap.html",
+            "errors": [
+              "Canonical URL (https://www.vidqu.ai/multiple-face-swap.html) does not match page URL (https://ko.vidqu.ai/multiple-face-swap.html)"
+            ]
+          }
+        ]
+      }
+    },
+    "https://tw.vidqu.ai/": {
+      "totalPages": 12,
+      "errors": {
+        "crawlErrors": [],
+        "resourceErrors": [],
+        "seoErrors": [
+          {
+            "url": "https://tw.vidqu.ai/multiple-face-swap.html",
+            "errors": [
+              "Canonical URL (https://www.vidqu.ai/multiple-face-swap.html) does not match page URL (https://tw.vidqu.ai/multiple-face-swap.html)"
+            ]
+          }
+        ]
+      }
+    },
+    "https://www.miocreate.com/": {
+      "totalPages": 21,
+      "errors": {
+        "crawlErrors": [],
+        "resourceErrors": [],
+        "seoErrors": [
+          {
+            "url": "https://www.miocreate.com/openapi.html",
+            "errors": [
+              "Missing canonical tag"
+            ]
+          }
+        ]
+      }
+    },
+    "https://es.miocreate.com/": {
+      "totalPages": 7,
+      "errors": {
+        "crawlErrors": [],
+        "resourceErrors": [],
+        "seoErrors": [
+          {
+            "url": "https://es.miocreate.com/refund-policy.html",
+            "errors": [
+              "Canonical URL (https://fr.miocreate.com/refund-policy.html) does not match page URL (https://es.miocreate.com/refund-policy.html)"
+            ]
+          }
+        ]
+      }
+    },
+    "https://www.vidwud.com/": {
+      "totalPages": 15,
+      "errors": {
+        "crawlErrors": [],
+        "resourceErrors": [],
+        "seoErrors": [
+          {
+            "url": "https://www.vidwud.com/free-face-swap.html?opentab=videofaceswap",
+            "errors": [
+              "Canonical URL (https://www.vidwud.com/free-face-swap.html) does not match page URL (https://www.vidwud.com/free-face-swap.html?opentab=videofaceswap)"
+            ]
+          }
+        ]
+      }
+    },
+    "https://www.ismartta.com/": {
+      "totalPages": 7,
+      "errors": {
+        "crawlErrors": [],
+        "resourceErrors": [
+          {
+            "url": "https://www.ismartta.com/source/images/js(1)",
+            "type": "script",
+            "pageUrl": "https://www.ismartta.com/pages/faq.html",
+            "error": "Request failed with status code 404 (from page: https://www.ismartta.com/pages/faq.html)"
+          }
+        ],
+        "seoErrors": [
+          {
+            "url": "https://www.ismartta.com/pages/faq.html",
+            "errors": [
+              "Canonical URL (https://www.ismartta.com/pages/faq.html#contact) does not match page URL (https://www.ismartta.com/pages/faq.html)"
+            ]
+          }
+        ]
+      }
+    },
+    "https://es.ismartta.com/": {
+      "totalPages": 7,
+      "errors": {
+        "crawlErrors": [],
+        "resourceErrors": [
+          {
+            "url": "https://es.ismartta.com/source/images/js(1)",
+            "type": "script",
+            "pageUrl": "https://es.ismartta.com/pages/contact.html",
+            "error": "Request failed with status code 404 (from page: https://es.ismartta.com/pages/contact.html)"
+          }
+        ],
+        "seoErrors": []
+      }
+    },
+    "https://jp.ismartta.com/": {
+      "totalPages": 6,
+      "errors": {
+        "crawlErrors": [],
+        "resourceErrors": [
+          {
+            "url": "https://jp.ismartta.com/source/css2",
+            "type": "css",
+            "pageUrl": "https://jp.ismartta.com/pages/about.html",
+            "error": "Request failed with status code 404 (from page: https://jp.ismartta.com/pages/about.html)"
+          },
+          {
+            "url": "https://jp.ismartta.com/source/images/js(1)",
+            "type": "script",
+            "pageUrl": "https://jp.ismartta.com/pages/contact.html",
+            "error": "Request failed with status code 404 (from page: https://jp.ismartta.com/pages/contact.html)"
+          }
+        ],
+        "seoErrors": []
+      }
+    },
+    "https://www.vidwuz.com/": {
+      "totalPages": 5,
+      "errors": {
+        "crawlErrors": [],
+        "resourceErrors": [],
+        "seoErrors": [
+          {
+            "url": "https://www.vidwuz.com/",
+            "errors": [
+              "Invalid total number of link tags (canonical + alternate): 3"
+            ]
+          }
+        ]
+      }
+    },
+    "https://www.easehow.com/": {
+      "totalPages": 19,
+      "errors": {
+        "crawlErrors": [
+          {
+            "url": "https://www.easehow.com/slider-mini",
+            "error": "Request failed with status code 404"
+          },
+          {
+            "url": "https://www.easehow.com/pages/about",
+            "error": "Request failed with status code 404"
+          },
+          {
+            "url": "https://www.easehow.com/pages/faq",
+            "error": "Request failed with status code 404"
+          },
+          {
+            "url": "https://www.easehow.com/contact",
+            "error": "Request failed with status code 404"
+          }
+        ],
+        "resourceErrors": [
+          {
+            "url": "https://www.easehow.com/images/favicon-32x32.png",
+            "type": "favicon",
+            "pageUrl": "https://www.easehow.com/teach-dog-not-to-raid-trash-can.html",
+            "error": "Request failed with status code 404 (from page: https://www.easehow.com/teach-dog-not-to-raid-trash-can.html)"
+          }
+        ],
+        "seoErrors": [
+          {
+            "url": "https://www.easehow.com/",
+            "errors": [
+              "Invalid total number of link tags (canonical + alternate): 2",
+              "Canonical URL (https://www.easeHow.com) does not match page URL (https://www.easehow.com/)"
+            ]
+          },
+          {
+            "url": "https://www.easehow.com/ai-undress.html",
+            "errors": [
+              "Invalid total number of link tags (canonical + alternate): 2"
+            ]
+          },
+          {
+            "url": "https://www.easehow.com/about.html",
+            "errors": [
+              "Invalid total number of link tags (canonical + alternate): 2",
+              "Canonical URL (https://www.easeHow.com/about.html) does not match page URL (https://www.easehow.com/about.html)"
+            ]
+          },
+          {
+            "url": "https://www.easehow.com/face-swap.html",
+            "errors": [
+              "Invalid total number of link tags (canonical + alternate): 3"
+            ]
+          },
+          {
+            "url": "https://www.easehow.com/cleaning.html",
+            "errors": [
+              "Canonical tag has no href attribute"
+            ]
+          },
+          {
+            "url": "https://www.easehow.com/repair.html",
+            "errors": [
+              "Canonical tag has no href attribute"
+            ]
+          },
+          {
+            "url": "https://www.easehow.com/decor.html",
+            "errors": [
+              "Canonical tag has no href attribute"
+            ]
+          },
+          {
+            "url": "https://www.easehow.com/pest-control.html",
+            "errors": [
+              "Canonical tag has no href attribute"
+            ]
+          },
+          {
+            "url": "https://www.easehow.com/outdoor.html",
+            "errors": [
+              "Canonical tag has no href attribute"
+            ]
+          },
+          {
+            "url": "https://www.easehow.com/review.html",
+            "errors": [
+              "Canonical tag has no href attribute"
+            ]
+          },
+          {
+            "url": "https://www.easehow.com/contact.html",
+            "errors": [
+              "Invalid total number of link tags (canonical + alternate): 2",
+              "Canonical URL (https://www.easeHow.com/ai-undress.html) does not match page URL (https://www.easehow.com/contact.html)"
+            ]
+          },
+          {
+            "url": "https://www.easehow.com/terms.html",
+            "errors": [
+              "Invalid total number of link tags (canonical + alternate): 2",
+              "Canonical URL (https://www.easeHow.com/terms.html) does not match page URL (https://www.easehow.com/terms.html)"
+            ]
+          },
+          {
+            "url": "https://www.easehow.com/privacy-policy.html",
+            "errors": [
+              "Invalid total number of link tags (canonical + alternate): 2",
+              "Canonical URL (https://www.easeHow.com/privacy-policy.html) does not match page URL (https://www.easehow.com/privacy-policy.html)"
+            ]
+          },
+          {
+            "url": "https://www.easehow.com/index.html",
+            "errors": [
+              "Invalid total number of link tags (canonical + alternate): 2",
+              "Canonical URL (https://www.easeHow.com) does not match page URL (https://www.easehow.com/index.html)"
+            ]
+          },
+          {
+            "url": "https://www.easehow.com/how-to-clean-a-toilet-bowl.html",
+            "errors": [
+              "Canonical tag has no href attribute"
+            ]
+          },
+          {
+            "url": "https://www.easehow.com/unclog-a-toilet-without-a-plunger.html",
+            "errors": [
+              "Canonical tag has no href attribute"
+            ]
+          },
+          {
+            "url": "https://www.easehow.com/how-to-fix-a-toilet-that-wont-flush.html",
+            "errors": [
+              "Canonical tag has no href attribute"
+            ]
+          },
+          {
+            "url": "https://www.easehow.com/how-to-fix-a-toilet-that-keeps-running.html",
+            "errors": [
+              "Canonical tag has no href attribute"
+            ]
+          },
+          {
+            "url": "https://www.easehow.com/teach-dog-not-to-raid-trash-can.html",
+            "errors": [
+              "Canonical tag has no href attribute"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
