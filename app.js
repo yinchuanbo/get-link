@@ -3,6 +3,9 @@ const axios = require("axios");
 const cheerio = require("cheerio");
 const fs = require("fs");
 
+const TIME_OUT = 20 * 1000;
+const REY_TIMES = 5;
+
 const downloadsDir = path.join(__dirname, "downloads");
 if (!fs.existsSync(downloadsDir)) {
   fs.mkdirSync(downloadsDir);
@@ -80,8 +83,8 @@ const crawlGet = async ({ url = "" }) => {
         await axios({
           method: "head",
           url: resourceUrl,
-          timeout: 5000,
-          maxRedirects: 5,
+          timeout: TIME_OUT,
+          maxRedirects: REY_TIMES,
           validateStatus: function (status) {
             return status < 400;
           },
@@ -100,8 +103,8 @@ const crawlGet = async ({ url = "" }) => {
         await axios({
           method: "head",
           url: href,
-          timeout: 5000,
-          maxRedirects: 5,
+          timeout: TIME_OUT,
+          maxRedirects: REY_TIMES,
           validateStatus: function (status) {
             return status < 400;
           },
@@ -140,14 +143,32 @@ const crawlGet = async ({ url = "" }) => {
         } else if (!canonicalHref.startsWith("http")) {
           errors.push(`Invalid canonical URL format: ${canonicalHref}`);
         } else {
-          // 规范化 URL，移除末尾的斜杠
-          const normalizedCanonical = canonicalHref.replace(/\/$/, "");
-          const normalizedPageUrl = pageUrl.replace(/\/$/, "");
+          // 规范化 URL，移除末尾的斜杠和 index.html
+          const normalizePathUrl = (url) => {
+            return url
+              .replace(/\/$/, "") // 移除末尾斜杠
+              .replace(/\/index\.html$/, "") // 移除末尾的 index.html
+              .replace(/\/index$/, ""); // 移除末尾的 index
+          };
+
+          const normalizedCanonical = normalizePathUrl(canonicalHref);
+          const normalizedPageUrl = normalizePathUrl(pageUrl);
 
           if (normalizedCanonical !== normalizedPageUrl) {
-            errors.push(
-              `Canonical URL (${canonicalHref}) does not match page URL (${pageUrl})`
-            );
+            // 如果不完全匹配，检查是否是因为 www 前缀的差异
+            const canonicalDomain = new URL(normalizedCanonical).hostname;
+            const pageDomain = new URL(normalizedPageUrl).hostname;
+
+            // 如果域名不同，且不是仅仅是 www 前缀的差异，才报告错误
+            if (canonicalDomain !== pageDomain) {
+              const canonicalWithoutWww = canonicalDomain.replace(/^www\./, "");
+              const pageWithoutWww = pageDomain.replace(/^www\./, "");
+              if (canonicalWithoutWww !== pageWithoutWww) {
+                errors.push(
+                  `Canonical URL (${canonicalHref}) does not match page URL (${pageUrl})`
+                );
+              }
+            }
           }
         }
       }
