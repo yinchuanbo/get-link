@@ -523,7 +523,7 @@ const urls = [
   ...ismarttaLans,
   ...vidmudLans,
   "https://www.vidwuz.com/",
-  "https://www.easehow.com/",
+  // "https://www.easehow.com/",
 ];
 
 const folderPath = "downloads";
